@@ -1,0 +1,144 @@
+
+body{
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: 100%;
+}
+
+
+/* lunbo */
+.pptbox {
+    /* margin-top: 10px; */
+    /* border-radius: 20px; */
+    overflow: hidden;
+    padding: 20px 0;
+    
+}
+.pptbox li img{
+    width: 100%;
+}
+/* 轮播 */
+
+
+
+/* 主体 */
+main{
+    /* margin-top: 10px; */
+    background: url(../images/bg.jpg);
+    background-size: 100% 100%;
+    padding: 20px 0;
+}
+/* 服务项目 */
+main .top-1 p,
+main .top-1 h1,
+main .fw p,
+main .fw h1{
+    font-size: 30px;
+    color: rgb(248, 157, 25);
+    text-align: center;
+    letter-spacing:4px;
+    margin-bottom: 10px;
+}
+
+/* 下面 */
+.content{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.content li{
+    width: 300px;
+    /* border: 1px solid #000; */
+    background-color: rgba(40, 53, 79, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content li img{
+    width: 100%;
+    height: 350px;
+}
+.content li .pw{
+    font-size: 26px;
+    display: inline-block;
+    /* margin: 10px 0; */
+    color: #fff;
+    /* text-align: center; */
+    text-decoration: none;
+}
+.content li>div{
+    color: rgb(157, 170, 200);
+    font-size: 14px;
+    padding: 10px;
+}
+/* css轮播 */
+
+.slidershow{
+    width: 1200px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+/* .top-1{
+    position: relative;
+}
+.top-1 .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+} */
+.navgation{
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    width: 50px;
+    height: 5px;
+    border: 2px solid #fff;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{
+    background-color: #fff;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.sliders{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}

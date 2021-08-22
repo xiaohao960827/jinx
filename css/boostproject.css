@@ -1,0 +1,147 @@
+/* banner */
+main .banner{
+    height: 400px;
+    background: url(../images/banner1.jpg) no-repeat 0px -190px;
+    background-size: 100% auto;
+    
+    /* background-color: rgba(0,0,0,0.5); */
+}
+main .content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .content p{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+/* 下面内容 */
+.price{
+    /* background-color: #ccc; */
+    background: url(../images/bg3.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 20px;
+}
+.classify{
+    display: flex;
+
+}
+.price h2{
+    text-align: center;
+    font-size: 30px;
+    color: #f60;
+    margin-bottom: 20px;
+}
+.price .top{
+    border-radius:20px 20px 10px 10px;
+    overflow: hidden;
+
+}
+.price .top ul{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    border-radius:0px 0px 10px 10px;
+    overflow: hidden;
+}
+.price .top img{ 
+    width: 200px;
+}
+.price .top ul li{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+.price .top ul .active1{
+    background-color: #f60;
+    color: #fff;
+}
+/* 下面 */
+.price .bottom{
+    box-sizing: border-box;
+    width: 990px;
+    height: 730px;
+    /* background-color: #fff; */
+    background: url(../images/2.jpg) no-repeat ;
+    background-size: auto 100%;
+    padding: 0 50px 50px;
+    border-radius: 30px;
+    margin: 10px;
+    
+}
+.price .bottom ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+.price .bottom li{
+    /* background-color: rgb(255, 239, 239); */
+    background: #fff url(../images/jinx1.jpg) no-repeat 50px -30px;
+    /* opacity:0.8; */
+    background-size: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    border: 3px solid #f00;
+    margin-bottom: 10px;
+}
+.price .bottom .ulList:nth-child(2) li{
+    background: #fff url(../images/an1.jpg) no-repeat -20px -10px;
+    background-size: 80px;
+
+}
+.price .bottom .ulList:nth-child(3) li{
+    background: #fff url(../images/sss.jpg) no-repeat 152px 0px;
+    background-size: 60px;
+
+}
+.price .bottom .ulList:nth-child(4) li{
+    background: #fff url(../images/ez.jpg) no-repeat 160px 0px;
+    background-size: 50px;
+
+}
+.price .bottom .ulList:nth-child(5) li{
+    background: #fff url(../images/vnx.jpg) no-repeat 145px 0px;
+    background-size: 60px;
+
+}
+.price .bottom .ulList:nth-child(6) li{
+    background: #fff url(../images/vnx.jpg) no-repeat 51px 115px;
+    background-size: 150px;
+
+}
+.price .bottom li p{
+    height: 48px;
+    line-height: 48px;
+}
+.price .bottom li>div{
+    color: #f60;
+}
+.price .bottom .ulList{
+    display: none;
+}
+.price .bottom .on{
+    display: block;
+}
+
+.ulList h3{
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    margin: 10px 0;
+}

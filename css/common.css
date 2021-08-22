@@ -1,0 +1,250 @@
+/* 全屏盒子 */
+.container-fluid{
+min-width: 1200px;
+}
+/* 版心盒子 */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 浮动 */
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/* 清除浮动 */
+.clearfix:after{
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* 测试用 */
+.bd{
+    border: 1px solid #000;
+}
+
+/* 页头 */
+
+header .top{
+    background-color: #2d374f;
+    height: 80px;
+}
+header .nav .logo{
+    width: 300px;
+}
+header .nav ul{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .active{
+    color: #f60 !important;
+}
+header .nav ul li a{
+    font-size: 20px;
+    color: #fff;
+    font-family: arial;
+    text-decoration: none;
+}
+header .nav ul li a:hover{
+    color: #f60;
+}
+header .nav ul li>p{
+    font-size: 18px;
+    color: #fff126;
+    letter-spacing:2px;
+}
+header .nav ul li>p span{
+    color: #fff;
+    
+}
+.right_box {
+    z-index: 10;
+    position: fixed;
+    top: 30%;
+    right: -118px;
+    height: 330px;
+    width: 180px;
+    background: url(../images/rightboxbg.png) no-repeat;
+    background-size: cover;
+    transition: 1s ease;
+}
+    .right_btn {
+      position: absolute;
+      left: 36px;
+      top: 4px;
+      font-size: 13px;
+      text-align: center;
+      width: 15px;
+      height: 90%;
+      padding: 5px;
+      background: url(../images/right_btn.png) no-repeat;
+      background-size: 100%;
+      cursor: pointer;
+      color: white;
+      transition: 1s ease;
+    }
+    .right_font {
+        margin-top: 120px;
+        line-height: 20px;
+    }
+        .left_arrow {
+            transform: rotate(180deg);
+          }
+.right_con {
+    position: relative;
+    float: right;
+    margin-top: 5%;
+    width: 118px;
+    height: 90%;
+    font-size: 12px;
+    text-align: center;
+}
+    .right_line1 {
+      z-index: 6;
+      position: absolute;
+      top: 220px;
+      width: 100%;
+      height: 1.2px;
+      background: #AB4055;
+    }
+    .right_line2 {
+      z-index: 6;
+      position: absolute;
+      top: 150px;
+      width: 100%;
+      height: 1.2px;
+      background: #AB4055;
+    }
+    .rightbtn_ewm {
+      margin-top: 15%;
+      width: 80%;
+    }
+    .right_con span {
+      display: inline-block;
+      margin-top: 6%;
+      color: #AB4055;
+    }
+    .right_qq {
+      margin-top: 35px;
+      color: #AB4055;
+    }
+      .right_qq img {
+        vertical-align: bottom;
+      }
+    .r_qq_hao {
+      margin-top: 8px;
+    }
+  .right_phone {
+    margin-top: 40px;
+    color: #AB4055;
+  }
+      .right_phone img {
+        vertical-align: bottom;
+      }
+    .qq_icon {
+      width: 50px;
+      height: 50px;
+      background: blue;
+    }
+/* 定位盒子 */
+.right-fixed ul{
+    width: 120px;
+    /* height: 200px; */
+    /* border: 1px solid #000; */
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    margin-top: -100px;
+    margin-right: -740px;
+    background-color: rgb(250, 232, 232);
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.right-fixed ul li img{
+    width: 120px;
+}
+.right-fixed ul li{
+    font-size: 18px;
+    color: rgb(255, 92, 92);
+}
+/* 左边盒子 */
+.left-fixed{
+    position: fixed;
+    left: 50%;
+    margin-left: -760px;
+    top: 50%;
+    margin-top: -150px;
+    text-align: center;
+    width: 150px;
+    background-color: #fff;
+    overflow: hidden;
+    /* background: url(../images/bgc3.jpg) no-repeat;
+    background-size: 100% 100%; */
+    border-radius: 20px;
+}
+.left-fixed img{
+    width: 100%;
+}
+.left-fixed li{
+    padding: 10px;
+    cursor: pointer;
+}
+.left-fixed li:hover{
+    background-color: skyblue;
+}
+.left-fixed li:hover a{
+    color: #f60;
+}
+.left-fixed h2{
+    font-size: 16px;
+    color: #f00;
+}
+.left-fixed li a{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(141, 0, 0);
+    text-decoration: none;
+}
+/* 页脚 */
+footer{
+    height: 120px;
+    width: 100%;
+    background: url(../images/footr.jpg);
+    background-size: 100% 100%;
+}
+footer ul{
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 560px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+footer ul li a{
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none !important;
+}
+footer ul li a:hover{
+    color: #f60;
+}
+footer p{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+
+}
